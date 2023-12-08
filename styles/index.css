@@ -1,28 +1,93 @@
-.navbar-nav .nav-link {
-    color: #031D5B; /* Change the color value as desired */
+/* Heading styles */
+.main_heading {
+    /* color: #061A4B;  */
+    color: rgb(112, 18, 200);
 }
 
+/* Navbar link color */
+.navbar-nav .nav-link {
+    color: #073092; /* Change the color value as desired */
+}
+
+/* List styles */
 ul {
     list-style: none;
     padding-left: 0;
 }
 
-.bullet-style::before{
-    content: "\2713"; 
-    color: blue; 
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    
-} 
-
+/* Oval button styles */
 .oval-btn {
-    border-radius: 50px; /* Adjust the value to change the button's oval shape */
-    width: 120px; /* Adjust width */
-    height: 50px; /* Adjust height */
+    border-radius: 100px; /* Adjust the value to change the button's oval shape */
+    width: 170px; /* Adjust width */
+    height: 65px; /* Adjust height */
 }
 
-
-.description{
+/* Description alignment */
+.description {
     text-align: left;
 }
+
+.features li{
+    margin: 10px;
+}
+
+/* Apply the check-circle icon to list items */
+.now li {
+    list-style: none; /* Remove default list styles */
+    padding-left: 25px; /* Add padding to align the text properly with the icon */
+    margin-bottom: 10px; /* Adjust spacing between list items */
+}
+
+.list-item::before {
+    margin-right: 10px; /* Adjust the spacing between the icon and text */
+}
+
+/* .btn-buy{
+        color: rgb(111, 29, 188);
+} */
+
+h2.card-title{
+    color: rgb(58, 8, 106);
+}
+
+.old-price {
+    color:grey;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.original-price {
+    font-size: 18px; /* Adjust size as needed */
+    text-decoration: line-through;
+}
+
+
+
+.discount-btn {
+    border-radius: 100px; /* Adjust the value to change the button's oval shape */
+    background-color: #efcdcd; /* Background color */
+    color: rgb(152, 18, 18); /* Text color */
+    padding: 8px 15px;
+    margin-top: 10px; /* Adjust spacing */
+
+}
+
+.discount-box {
+    text-align: center;
+}
+
+.discounted-price {
+    font-size: 50px; /* Adjust size as needed */
+    font-weight: bold; /* For emphasis */
+    color:rgb(39, 141, 175)
+}
+
+/* .card-title{
+
+} */
+
+
