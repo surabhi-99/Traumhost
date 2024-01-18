@@ -20,8 +20,8 @@ li {
 .nav-link {
   margin-left: 5px;
   margin-right: 5px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .dropdown-item:focus,
@@ -516,6 +516,18 @@ h1.promosmall {
   color: #212529;
   text-align: left;
 }
+@media (max-width: 767px) {
+  .needtext {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    padding:0%;
+  }
+}
 .needtext {
   display: flex;
   justify-content: space-around;
@@ -577,6 +589,89 @@ h1.promosmall {
   font-size: 14px;
   margin: 0 10px 0 0;
 }
+
+
+/* .category-box {
+  box-shadow: 0px 8px 20px #9F9F9F45;
+  border: 1px solid #DEE5F1;
+  border-radius: 5px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.category-box img {
+  width: 80px;
+}
+
+.category-box p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #788191;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.category-box h3.box-heading {
+  margin: 20px 0 10px;
+}
+
+.m-icon i {
+  background-color: #377dff;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 15%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.needtext {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #eef4fd;
+  padding: 20px;
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.m-num a {
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  position: relative;
+  left: -25px;
+  text-transform: uppercase;
+}
+
+
+.m-help {
+  font-size: 26px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.needtext::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 64%;
+  background: #e0ecfc;
+}
+
+.m-btn {
+  position: relative;
+  z-index: 1;
+} */
 section.main-section {
   margin: 30px 0;
 }
