@@ -35,7 +35,7 @@ li {
 } 
 
 header {
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding: 0;
   position: sticky;
   top: 0;
@@ -914,4 +914,27 @@ p.features-text {
   }
 }
 
+.feature-circle {
+  background-color: #f9f9f9; /* Light background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners for a card-like appearance */
+  padding: 20px;
+  text-align: center; /* Center the text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-circle img {
+  max-width: 80px; /* Adjust based on your preference */
+  margin-bottom: 15px;
+}
+
+.feature-circle h5 {
+  margin-bottom: 10px;
+}
+
+.feature-circle p {
+  font-size: 0.9rem; /* Smaller text */
+}
 
