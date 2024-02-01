@@ -17,110 +17,108 @@
 
 <body>
 
-    <header>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3 col-sm-3 col-12">
-                    <div>
-                        <a class="navbar-brand" href="../index.html">
-                            <img src="../images/traumhosting_logo.png" alt="Logo" class="img-fluid logo">
+  <header>
+    <nav class="mx-0 navbar navbar-expand-lg bg-body-tertiary">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/traumhosting_logo.png" alt="Logo" class="img-fluid logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Domain
                         </a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light payapp">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Domain
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="domain-search.html">Domain Search</a></li>
-                                        <li><a class="dropdown-item" href="#">Domain Transfer</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Hosting
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="shared-hosting.html">Shared Hosting</a></li>
-                                        <li><a class="dropdown-item" href="wordpress-hosting.html">WordPress Hosting</a></li>
-                                        <li><a class="dropdown-item" href="reseller-hosting.html">Reseller Hosting</a></li>
-                                     </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        VPS Hosting
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="linux-managed-vps-hosting.html">Linux VPS
-                                                Hosting</a></li>
-                                        <li><a class="dropdown-item" href="windows-vps-hosting.html">Windows Hosting</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="cpanel-hosting.html">cPanel Hosting</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Dedicated Server
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="linux-dedicated-server.html">Linux Dedicated Server</a></li>
-                                        <li><a class="dropdown-item" href="windows-dedicated-server.html">Windows Dedicated Server</a></li>
-                                        <li><a class="dropdown-item" href="cpanel-dedicated-server.html">cPanel Dedicated Server</a></li>
-                                     </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Security & Tool
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="ssl-certificate.html">SSL Certificate</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Resources
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">FAQ</a></li>
-                                        <li><a class="dropdown-item" href="#">Terms $ Condition</a></li>
-                                        <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
-                                        <li><a class="dropdown-item" href="#">Refund policy</a></li>
-                                        <li><a class="dropdown-item" href="#">Cancellation & Refund Policy</a></li>
-                                        <li><a class="dropdown-item" href="#">Acceptable User Policy</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fas fa-phone-alt vibration-icon"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><img src="../images/login.png" class="img-icon"
-                                            alt="Log In"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="domain-search.html">Domain Search</a></li>
+                            <li><a class="dropdown-item" href="#">Domain Transfer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Hosting
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="shared-hosting.html">Shared Hosting</a></li>
+                            <li><a class="dropdown-item" href="wordpress-hosting.html">WordPress Hosting</a>
+                            </li>
+                            <li><a class="dropdown-item" href="reseller-hosting.html">Reseller Hosting</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            VPS Hosting
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="linux-managed-vps-hosting.html">Linux VPS
+                                    Hosting</a></li>
+                            <li><a class="dropdown-item" href="windows-vps-hosting.html">Windows Hosting</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cpanel-hosting.html">cPanel Hosting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dedicated Server
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="linux-dedicated-server.html">Linux Dedicated
+                                    Server</a></li>
+                            <li><a class="dropdown-item" href="windows-dedicated-server.html">Windows
+                                    Dedicated Server</a></li>
+                            <li><a class="dropdown-item" href="cpanel-dedicated-server.html">cPanel
+                                    Dedicated Server</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Security & Tool
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ssl-certificate.html">SSL Certificate</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="#">Terms $ Condition</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="#">Refund policy</a></li>
+                            <li><a class="dropdown-item" href="#">Cancellation & Refund Policy</a></li>
+                            <li><a class="dropdown-item" href="#">Acceptable User Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-phone-alt vibration-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../images/login.png" class="img-icon"
+                                alt="Log In"></a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </header>
+        
+    </nav>
+</header>
 
 
 
@@ -244,3 +242,222 @@
 </body>
 
 </html>
+
+
+<!-- 
+.nav-link {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #8671e0 !important;
+  }
+  
+  @media (max-width: 767px) {
+    .dropdown-item:active {
+      color: #16181b;
+      text-decoration: none;
+      background-color: #8671e0 !important;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    /* Mobile view - Modify dropdown appearance */
+    .dropdown-toggle::after {
+      display: none; /* Remove the caret icon in mobile view */
+    }
+  
+    .dropdown-menu {
+      display: none; /* Hide the dropdown menu by default */
+    }
+  
+    .dropdown.show .dropdown-menu {
+      display: block; /* Show the dropdown menu when dropdown is active */
+    }
+  
+    .dropdown-toggle {
+      /* Add mobile-specific styles for the dropdown toggle button */
+      /* background-color: #a1c6ee; 
+      color: #fff;  */
+      border: 1px solid transparent; /* Remove border */
+      padding: 8px 16px; /* Adjust padding */
+    }
+  
+    .dropdown-menu a {
+      color: #333; /* Link color */
+    }
+  }
+  
+  /* Navbar link color */
+  .navbar-nav .nav-link {
+    color: #041131; /* Change the color value as desired */
+  }
+  
+  /* Adjust the logo size for smaller screens */
+  @media (max-width: 992px) {
+    .logo {
+      width: 120px; /* Smaller width for smaller devices */
+    }
+  }
+  
+  /* Reduce padding and margin in the navbar for smaller screens */
+  @media (max-width: 992px) {
+    .nav-link {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  /* Responsive font size for navbar items */
+  @media (max-width: 992px) {
+    .navbar-nav .nav-link {
+      font-size: 0.9rem; /* Smaller font size */
+    }
+  }
+  
+  /* Adjust dropdown menu for smaller screens */
+  @media (max-width: 992px) {
+    .dropdown-menu {
+      position: static; /* Dropdown in place */
+      width: 100%; /* Full width */
+    }
+  }
+  .custom-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+  }
+  
+  .flex-logo, .flex-nav {
+    flex: 1; /* Flex grow */
+    min-width: 250px; /* Minimum width before wrapping */
+  }
+  
+  /* Adjust the logo size for smaller screens */
+  @media (max-width: 992px) {
+  .logo {
+    width: 120px; /* Smaller width for smaller devices */
+  }
+  }
+  header {
+    background-color: #fff;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding-top: 5px;
+    box-shadow: 0px 6px 30px #0000001a;
+  } -->
+
+
+
+
+
+
+
+
+<!--   
+.nav-link {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .dropdown-item:active {
+      color: #16181b;
+      text-decoration: none;
+      background-color: #8671e0 !important;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    /* Mobile view - Modify dropdown appearance */
+    .dropdown-toggle::after {
+      display: none; /* Remove the caret icon in mobile view */
+    }
+  
+    .dropdown-menu {
+      display: none; /* Hide the dropdown menu by default */
+    }
+  
+    .dropdown.show .dropdown-menu {
+      display: block; /* Show the dropdown menu when dropdown is active */
+    }
+  
+    .dropdown-toggle {
+      /* Add mobile-specific styles for the dropdown toggle button */
+      /* background-color: #a1c6ee; 
+      color: #fff;  */
+      border: 1px solid transparent; /* Remove border */
+      padding: 8px 16px; /* Adjust padding */
+    }
+  
+    .dropdown-menu a {
+      color: #333; /* Link color */
+    }
+  }
+  
+  .navbar-nav .nav-link {
+    color: #041131; /* Change the color value as desired */
+  }
+  
+  /* Adjust the logo size for smaller screens */
+  @media (max-width: 1024px) {
+    .logo {
+      width: 100px; /* Smaller width for smaller devices */
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .nav-link {
+      padding-left: 2px;
+      padding-right: 2px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .navbar-nav .nav-link {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .dropdown-menu {
+      position: static; 
+      width: 100%; 
+    }
+  }
+  
+  .custom-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+  } 
+  
+  /* .flex-logo, .flex-nav {
+    flex: 1; 
+    min-width: 250px; 
+  } */
+  
+  @media (max-width: 1024px) {
+  .logo {
+    width: 120px; /* Smaller width for smaller devices */
+  }
+  } -->

@@ -1,16 +1,16 @@
-body {
-  max-width: 1920px;
-  margin: 0 auto !important;
+ body {
+ /* max-width: 1920px;
+  margin: 0 auto !important; */
   font-family: "Roboto", sans-serif !important;   /*open sans roboto poppins*/
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-size: 18px;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .col-md-6 {
-    flex: 0 0 50% !important; /* Ensure 50% width */
-    max-width: 50% !important; /* Set maximum width to 50% */
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
   }
-}
+} */
 a {
   text-decoration: none !important;
 }
@@ -18,12 +18,10 @@ a {
 li {
   list-style: none;
 }
-.nav-link {
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+
+/* .container {
+  max-width: 1250px !important;
+} */
 
 .dropdown-item:focus,
 .dropdown-item:hover {
@@ -31,10 +29,6 @@ li {
   text-decoration: none;
   background-color: #8671e0 !important;
 }
-
-/* .container {
-  max-width: 1250px !important;
-} */
 
 header {
   background-color: #fff;
@@ -46,10 +40,52 @@ header {
   box-shadow: 0px 6px 30px #0000001a;
 }
 
-.main_heading {
-  color: #2f51a7;
-  /* color: rgb(112, 18, 200); */
+.navbar-nav .nav-link {
+  color: #041131; /* Change the color value as desired */
 }
+
+@media (min-width: 1024px) {
+    .custom-header .container-fluid {
+        display: flex;
+        justify-content: center;
+    }
+    .custom-header .navbar {
+        width: 100%;
+    }
+    .custom-header .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+/* 
+.header_mob {
+  display: none;
+}
+.header_mob {
+  position: absolute;
+  top: 25px;
+  z-index: 9;
+  right: 23px;
+}
+.header_mob a.mobile_menu {
+  display: block;
+  width: 40px;
+  height: 30px;
+}
+.header_mob a.mobile_menu span {
+  width: 32px;
+  height: 3px;
+  background: #031d5b;
+  display: block;
+  margin-bottom: 6px;
+  border-radius: 0;
+  float: right;
+  transition: all .5s;
+} */
+/* .main_heading {
+  color: #2f51a7;
+} */
+
 .logo {
   width: 150px; /* Reducing the width by 50% */
   height: auto; /* Maintain aspect ratio */
@@ -58,42 +94,11 @@ header {
 .payapp li a {
   color: #041131 !important;
 }
-/* For mobile devices (up to 767px width) */
-/* For mobile devices (up to 767px width) */
-@media (max-width: 767px) {
-  .dropdown-item:active {
-    color: #16181b;
-    text-decoration: none;
-    background-color: #8671e0 !important;
-  }
-}
 
-
-@media (max-width: 768px) {
-  /* Mobile view - Modify dropdown appearance */
-  .dropdown-toggle::after {
-    display: none; /* Remove the caret icon in mobile view */
-  }
-
-  .dropdown-menu {
-    display: none; /* Hide the dropdown menu by default */
-  }
-
-  .dropdown.show .dropdown-menu {
-    display: block; /* Show the dropdown menu when dropdown is active */
-  }
-
-  .dropdown-toggle {
-    /* Add mobile-specific styles for the dropdown toggle button */
-    /* background-color: #a1c6ee; 
-    color: #fff;  */
-    border: 1px solid transparent; /* Remove border */
-    padding: 8px 16px; /* Adjust padding */
-  }
-
-  .dropdown-menu a {
-    color: #333; /* Link color */
-  }
+/* List styles */
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* 
@@ -109,17 +114,6 @@ header {
     border-bottom: 0;
     border-left: 5px solid transparent !important;
 } */
-
-/* Navbar link color */
-.navbar-nav .nav-link {
-  color: #041131; /* Change the color value as desired */
-}
-
-/* List styles */
-ul {
-  list-style: none;
-  padding-left: 0;
-}
 
 .custom-ul {
   margin: 0; /* Remove default margin */
@@ -195,10 +189,6 @@ h2.card-title {
   font-weight: bold; /* For emphasis */
   color: rgb(39, 141, 175);
 }
-
-/* .card-title{
-
-} */
 
 .first_ul {
   margin-bottom: 20px;
@@ -412,6 +402,8 @@ h3{
   content: "\2212"; /* Minus icon */
   float: right;
 }
+/* Existing styles */
+
 .domain-search-container {
   display: flex;
   justify-content: center;
@@ -455,6 +447,43 @@ h3{
 .domain-search-button-header:hover {
   background-color: #4a90e2;
 }
+
+/* Additional styles for small devices */
+@media (max-width: 768px) {
+  .domain-search-wrapper {
+    width: 100%; /* Make it full width on small screens */
+  }
+
+  .domain-search-input-header {
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+
+  .domain-search-button-header {
+    padding: 8px 16px; /* Adjust button padding for small screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .domain-search-wrapper {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .www-prefix {
+    margin-bottom: 5px; /* Add space between prefix and input */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .domain-search-input-header {
+    width: 100%; /* Full width for input */
+    margin-bottom: 5px; /* Add space between input and button */
+  }
+
+  .domain-search-button-header {
+    width: 100%; /* Full width for button */
+  }
+}
+
 .domain-pricing-row {
   display: flex;
   justify-content: space-between;
@@ -505,15 +534,29 @@ h1.promosmall {
   width: 100px;
   height: 100px;
 }
-.os-name-1 {
-  width: 300px;
-  height: 70px;
+.os-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
+
+.os-name-1 {
+  flex: 1;
+  min-width: 250px; /* Minimum width for each item */
+  max-width: 300px; /* Maximum width for each item */
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img-os {
-  width: 250px;
-  height: 50px;
+  max-width: 100%;
+  max-height: 50px;
   padding: 5px 5px;
 }
+
 .text-color {
   background: -webkit-linear-gradient(#662fff, #2462dd);
   -webkit-background-clip: text;
@@ -521,12 +564,10 @@ h1.promosmall {
   text-shadow: 0 6px 9px rgb(39 29 96 / 7%);
   background-clip: text;
 }
-.contact-box {
+/* .contact-box {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
   color: #212529;
-  text-align: left;
 }
 @media (max-width: 767px) {
   .needtext {
@@ -571,7 +612,7 @@ h1.promosmall {
   font-size: 26px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-}
+} */
 .btn {
   display: inline-block;
   font-weight: 400;
