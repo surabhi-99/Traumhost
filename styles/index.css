@@ -938,3 +938,41 @@ p.features-text {
   font-size: 0.9rem; /* Smaller text */
 }
 
+/* Base styles */
+.card-box {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-box:hover {
+    transform: scale(1.05);
+}
+
+/* Tablet and below styles */
+@media (max-width: 992px) { /* Adjusts for devices below 992px, covering tablets and down */
+    .card-box {
+        padding: 3rem 2rem; /* Slightly reduce padding */
+    }
+
+    .card-box p.fs-3, .card-box h6, .card-box ul {
+        font-size: smaller; /* Adjust font sizes for readability */
+    }
+
+    .check-icon i.fs-1 {
+        font-size: 2rem; /* Adjust the icon size */
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) { /* Adjusts for devices below 768px */
+    .card-box {
+        padding: 2rem 1rem; /* Further reduce padding for smaller screens */
+    }
+
+    .card-box p.fs-3 {
+        font-size: 1rem; /* Adjust the URL font size for smaller screens */
+    }
+
+    .row > div[class^="col-md-"] {
+        margin-bottom: 20px; /* Adds margin to the bottom for spacing between cards */
+    }
+}
